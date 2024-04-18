@@ -1,0 +1,31 @@
+main {
+    width: 80%;
+    margin: auto;
+}
+
+img {
+    width: 200px;
+    height: 300px;
+}
+
+.termekek{
+    display: grid;
+    grid-template-columns: repeat(3, 40rem);
+    
+    height: 300px;
+    margin-top: 90px;
+}
+
+.extra {
+    margin-top: 20px;
+    width: 300px;
+    height: 40px;
+}
+
+.rendezes {
+    display: grid;
+    grid-template-columns: repeat(2, 25rem);
+}
+
+
+
