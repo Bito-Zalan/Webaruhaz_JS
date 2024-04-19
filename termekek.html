@@ -19,80 +19,86 @@
   <body>
     <main>
       <header>
-        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <h1>Termékek</h1>
+        <nav class="navbar navbar-expand-sm bg-light navbar navbar-dark bg-dark">
           <div class="container-fluid">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Termékeink</a>
+                <a class="nav-link active" href="termekek.html">Termékeink</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Kosár</a>
+                <a class="nav-link" href="adatok.html">Személyes adatok</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Személyes adatok</a>
+                <a class="nav-link" id="admin" href="admin.html">Admin</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="admin" href="#">Admin</a>
+                <a class="nav-link" href="kosar.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                  <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                </svg></a>
               </li>
             </ul>
           </div>
         </nav>
         <div class="rendezes">
-            <select class ="extra" id="rendezes" name="rendezes">
-                <option value="cipok">Rózsaszín cipő</option>
-                <option value="polok">Kék cipő</option>
-                <option value="nadragok">Fekete cipő</option>
+            <select class ="extra" id="rendezes" name="rendezes" placeholder="Rendezési szempontok">
+                <option value="cipok">Magasszárúak</option>
+                <option value="polok">Alacsonyszárúak</option>
+                <option value="nadragok">Gyerekcipők</option>
             </select>
             <input class="extra" type="placeholder" id="szuro" name="szuro" placeholder="Szűrési lehetőségek">
         </div>
       </header>
       <article>
         <div class="termekek">
-          <div class="card" style="width: 18rem">
+          <div class="card text-white bg-dark mb-3" style="width: 20rem">
             <img
-              src="kepek/kek.png"
+              src="kepek/magasszaru1.png"
               class="card-img-top"
               alt="kep1"
             />
             <div class="card-body">
+              <p class="ciponev">Magasszárú Jordan 1</p>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
-                the bulk of the card's content.<br /><br />Ár: 49.990Ft
+                the bulk of the card's content.<br /><br />Ár: 69.990Ft
               </p>
-              <button id ="gomb" type="button" class="btn btn-success">Kosárba</button>
+              <button id ="magasgomb" type="button" class="btn btn-success">Kosárba</button>
             </div>
           </div>
-          <div class="card" style="width: 18rem">
+          <div class="card text-white bg-dark mb-3" style="width: 20rem">
             <img
-              src="kepek/fekete.png"
+              src="kepek/alacsonyszaru1.png"
               class="card-img-top"
               alt="kep1"
             />
             <div class="card-body">
+              <p class="ciponev">Alacsonyszárú Jordan 1</p>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
-                the bulk of the card's content.<br /><br />Ár: 49.990Ft
+                the bulk of the card's content.<br /><br />Ár: 44.990Ft
               </p>
-              <button id ="gomb" type="button" class="btn btn-success">Kosárba</button>
+              <button id ="alacsonygomb" type="button" class="btn btn-success">Kosárba</button>
             </div>
           </div>
-          <div class="card" style="width: 18rem">
+          <div class="card text-white bg-dark mb-3" style="width: 20rem">
             <img
-              src="kepek/rozsaszin.png"
+              src="kepek/gyerekcipo1.png"
               class="card-img-top"
               alt="kep1"
             />
             <div class="card-body">
+              <p class="ciponev">Gyerek Jordan 1</p>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
-                the bulk of the card's content.<br /><br />Ár: 49.990Ft
+                the bulk of the card's content.<br /><br />Ár: 19.990Ft
               </p>
-              <button id ="gomb" type="button" class="btn btn-success">Kosárba</button>
+              <button id ="gyerekgomb" type="button" class="btn btn-success">Kosárba</button>
             </div>
           </div>
         </div>
       </article>
-      <footer></footer>
+      <footer><p>Bitó Zalán</p></footer>
     </main>
   </body>
 </html>
