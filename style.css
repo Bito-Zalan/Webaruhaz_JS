@@ -101,3 +101,13 @@ footer{
         margin-top: 90px;
       }
 }
+
+@media (max-width: 1400px) {
+    .termekek {
+        gap: 20px;
+        width: 100%;
+        margin: auto;
+        height: 300px;
+        margin-top: 90px;
+      }
+}

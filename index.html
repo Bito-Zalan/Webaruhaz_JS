@@ -15,6 +15,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Webáruház</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
     <main>
@@ -24,7 +26,7 @@
           <div class="container-fluid">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" href="termekek.html">Termékeink</a>
+                <a class="nav-link active" href="index.html">Termékeink</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="adatok.html">Személyes adatok</a>
@@ -42,61 +44,15 @@
         </nav>
         <div class="rendezes">
             <select class ="extra" id="rendezes" name="rendezes" placeholder="Rendezési szempontok">
+                <option value="cipok">Összes cipő</option>
                 <option value="cipok">Magasszárúak</option>
                 <option value="polok">Alacsonyszárúak</option>
-                <option value="nadragok">Gyerekcipők</option>
             </select>
             <input class="extra" type="placeholder" id="szuro" name="szuro" placeholder="Szűrési lehetőségek">
         </div>
       </header>
       <article>
-        <div class="termekek">
-          <div class="card text-white bg-dark mb-3" style="width: 20rem">
-            <img
-              src="kepek/magasszaru1.png"
-              class="card-img-top"
-              alt="kep1"
-            />
-            <div class="card-body">
-              <p class="ciponev">Magasszárú Jordan 1</p>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.<br /><br />Ár: 69.990Ft
-              </p>
-              <button id ="magasgomb" type="button" class="btn btn-success">Kosárba</button>
-            </div>
-          </div>
-          <div class="card text-white bg-dark mb-3" style="width: 20rem">
-            <img
-              src="kepek/alacsonyszaru1.png"
-              class="card-img-top"
-              alt="kep1"
-            />
-            <div class="card-body">
-              <p class="ciponev">Alacsonyszárú Jordan 1</p>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.<br /><br />Ár: 44.990Ft
-              </p>
-              <button id ="alacsonygomb" type="button" class="btn btn-success">Kosárba</button>
-            </div>
-          </div>
-          <div class="card text-white bg-dark mb-3" style="width: 20rem">
-            <img
-              src="kepek/gyerekcipo1.png"
-              class="card-img-top"
-              alt="kep1"
-            />
-            <div class="card-body">
-              <p class="ciponev">Gyerek Jordan 1</p>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.<br /><br />Ár: 19.990Ft
-              </p>
-              <button id ="gyerekgomb" type="button" class="btn btn-success">Kosárba</button>
-            </div>
-          </div>
-        </div>
+        <div class="termekek"></div>
       </article>
       <footer><p>Bitó Zalán</p></footer>
     </main>
