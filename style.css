@@ -14,7 +14,6 @@ img {
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   margin: auto;
-  height: 300px;
   margin-top: 50px;
 }
 
@@ -53,6 +52,11 @@ footer{
     margin-top: 20px;
 }
 
+.ciponev{
+    text-decoration: underline;
+    text-decoration-color: rgba(240, 248, 255, 0.61) ;
+}
+
 @media (max-width: 576px) {
     main{
         width: 100%;
@@ -85,7 +89,6 @@ footer{
         gap: 2rem;
         width: 100%;
         margin: auto;
-        height: 300px;
         margin-top: 90px;
     }
     
@@ -97,7 +100,6 @@ footer{
         flex-wrap: wrap;
         width: 100%;
         margin: auto;
-        height: 300px;
         margin-top: 90px;
       }
 }
@@ -107,7 +109,6 @@ footer{
         gap: 20px;
         width: 100%;
         margin: auto;
-        height: 300px;
         margin-top: 90px;
       }
 }

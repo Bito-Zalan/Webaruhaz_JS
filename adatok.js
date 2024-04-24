@@ -1,7 +1,7 @@
 export const CIPOK = [
     {
         tipus: ["osszes","magasszaru"],
-        nev: "Magasszárú Kék Jordan 1",
+        nev: "Air Jordan 1 Retro High OG",
         marka: "Jordan",
         meret: [42, 43, 44],
         szin: "Kék",
@@ -11,7 +11,7 @@ export const CIPOK = [
     },
     {
         tipus: ["osszes","magasszaru"],
-        nev: "Magasszárú Barna Jordan 1",
+        nev: "Air Jordan 1 High OG",
         marka: "Jordan",
         meret: [40, 41, 42, 45],
         szin: "Barna",
@@ -21,7 +21,7 @@ export const CIPOK = [
     },
     {
         tipus: ["osszes","magasszaru"],
-        nev: "Magasszárú Sárga Jordan 1",
+        nev: "Air Jordan 1 High OG",
         marka: "Jordan",
         meret: [39, 42, 43, 44],
         szin: "Sárga",
@@ -31,7 +31,7 @@ export const CIPOK = [
     },
     {
         tipus: ["osszes","alacsonyszaru"],
-        nev: "Alacsonyszárú Sárga Jordan 1",
+        nev: "Air Jordan 1 Low",
         marka: "Jordan",
         meret: [40,41,44,46],
         szin: "Sárga",
@@ -41,7 +41,7 @@ export const CIPOK = [
     },
     {
         tipus: ["osszes","alacsonyszaru"],
-        nev: "Alacsonyszárú Fekete Jordan 1",
+        nev: "Air Jordan 1 Low",
         marka: "Jordan",
         meret: [38,41,42,44],
         szin: "Fekete",
@@ -51,7 +51,7 @@ export const CIPOK = [
     },
     {
         tipus: ["osszes","alacsonyszaru"],
-        nev: "Alacsonyszárú Kék Jordan 1",
+        nev: "Air Jordan 1 Low",
         marka: "Jordan",
         meret: [40,41,42,43,44],
         szin: "Kék",

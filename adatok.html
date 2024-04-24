@@ -62,17 +62,19 @@
               <input
                 type="email"
                 class="form-control"
-                id="email"
+                id="nev"
                 placeholder="Add meg a neved!"
-                name="email"
+                name="nev"
+                pattern="^[A-Z][a-z]*$"
+                title="A névnek nagybetűvel kell kezdődnie, és csak betűket tartalmazhat!"
               />
               <label for="nev">Szállítási cím: </label>
               <input
                 type="email"
                 class="form-control"
-                id="email"
+                id="szcim"
                 placeholder="Utca, házszám"
-                name="email"
+                name="szcim"
               />
             <label for="nev">Ország: </label>
             <select class="form-select form-select-lg">

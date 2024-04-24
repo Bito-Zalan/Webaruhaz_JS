@@ -40,12 +40,16 @@ export function kartyakLetrehoz(szurtCipok) {
 
   szurtCipok.forEach((cipo) => {
     kartyak += `
-        <div class="card text-white bg-dark mb-3" style="width: 20rem">
+        <div class="card text-white bg-dark mb-3" style="width: 18rem">
         <img src="${cipo.kep}" class="card-img-top" alt="${cipo.tipus}">
         <div class="card-body">
           <p class="ciponev">${cipo.nev}</p>
+          <label>Elérhető méretek:</label>
+          <select id="meret" class="form-select text-white bg-dark mb-3">
+            ${cipo.meret.map(meret => `<option value="${meret}">${meret}</option>`).join('')}
+          </select>
           <p class="card-text">
-            Elérhető méretek: ${cipo.meret}<br />
+            
             Szín: ${cipo.szin}<br />
             Ár: ${cipo.ar} Ft<br />
             Készleten: ${cipo.db}db
