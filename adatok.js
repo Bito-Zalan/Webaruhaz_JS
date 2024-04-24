@@ -1,6 +1,8 @@
 export const CIPOK = [
     {
-        tipus: "Magasszárú Kék Jordan 1",
+        tipus: ["osszes","magasszaru"],
+        nev: "Magasszárú Kék Jordan 1",
+        marka: "Jordan",
         meret: [42, 43, 44],
         szin: "Kék",
         ar: 69990,
@@ -8,7 +10,9 @@ export const CIPOK = [
         kep: "./kepek/magasszaru1.png",
     },
     {
-        tipus: "Magasszárú Barna Jordan 1",
+        tipus: ["osszes","magasszaru"],
+        nev: "Magasszárú Barna Jordan 1",
+        marka: "Jordan",
         meret: [40, 41, 42, 45],
         szin: "Barna",
         ar: 79990,
@@ -16,7 +20,9 @@ export const CIPOK = [
         kep: "./kepek/magasszaru2.webp",
     },
     {
-        tipus: "Magasszárú Sárga Jordan 1",
+        tipus: ["osszes","magasszaru"],
+        nev: "Magasszárú Sárga Jordan 1",
+        marka: "Jordan",
         meret: [39, 42, 43, 44],
         szin: "Sárga",
         ar: 119990,
@@ -24,7 +30,9 @@ export const CIPOK = [
         kep: "./kepek/magasszaru3.webp",
     },
     {
-        tipus: "Alacsonyszárú Sárga Jordan 1",
+        tipus: ["osszes","alacsonyszaru"],
+        nev: "Alacsonyszárú Sárga Jordan 1",
+        marka: "Jordan",
         meret: [40,41,44,46],
         szin: "Sárga",
         ar: 44990,
@@ -32,7 +40,9 @@ export const CIPOK = [
         kep: "./kepek/alacsonyszaru1.png",
     },
     {
-        tipus: "Alacsonyszárú Fekete Jordan 1",
+        tipus: ["osszes","alacsonyszaru"],
+        nev: "Alacsonyszárú Fekete Jordan 1",
+        marka: "Jordan",
         meret: [38,41,42,44],
         szin: "Fekete",
         ar: 48990,
@@ -40,7 +50,9 @@ export const CIPOK = [
         kep: "./kepek/alacsonyszaru3.webp",
     },
     {
-        tipus: "Alacsonyszárú Kék Jordan 1",
+        tipus: ["osszes","alacsonyszaru"],
+        nev: "Alacsonyszárú Kék Jordan 1",
+        marka: "Jordan",
         meret: [40,41,42,43,44],
         szin: "Kék",
         ar: 54990,
