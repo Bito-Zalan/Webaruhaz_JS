@@ -9,6 +9,21 @@ img {
   height: 300px;
 }
 
+.adminkep{
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px, 2px, gray;
+}
+
+.adminszoveg{
+    font-size: 22px;
+}
+
+.kosaruzenet{
+    text-align: center;
+    margin: 20px;
+}
+
 .termekek {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -7,7 +7,7 @@ export const CIPOK = [
         szin: "Kék",
         ar: 69990,
         db: 3,
-        kep: "./kepek/magasszaru1.png",
+        kep: "kepek/magasszaru1.png",
     },
     {
         tipus: ["osszes","magasszaru"],
@@ -17,7 +17,7 @@ export const CIPOK = [
         szin: "Barna",
         ar: 79990,
         db: 5,
-        kep: "./kepek/magasszaru2.webp",
+        kep: "kepek/magasszaru2.webp",
     },
     {
         tipus: ["osszes","magasszaru"],
@@ -27,7 +27,7 @@ export const CIPOK = [
         szin: "Sárga",
         ar: 119990,
         db: 4,
-        kep: "./kepek/magasszaru3.webp",
+        kep: "kepek/magasszaru3.webp",
     },
     {
         tipus: ["osszes","alacsonyszaru"],
@@ -37,7 +37,7 @@ export const CIPOK = [
         szin: "Sárga",
         ar: 44990,
         db: 4,
-        kep: "./kepek/alacsonyszaru1.png",
+        kep: "kepek/alacsonyszaru1.png",
     },
     {
         tipus: ["osszes","alacsonyszaru"],
@@ -47,7 +47,7 @@ export const CIPOK = [
         szin: "Fekete",
         ar: 48990,
         db: 4,
-        kep: "./kepek/alacsonyszaru3.webp",
+        kep: "kepek/alacsonyszaru3.webp",
     },
     {
         tipus: ["osszes","alacsonyszaru"],
@@ -57,6 +57,6 @@ export const CIPOK = [
         szin: "Kék",
         ar: 54990,
         db: 5,
-        kep: "./kepek/alacsonyszaru2.webp",
+        kep: "kepek/alacsonyszaru2.webp",
     },
 ];

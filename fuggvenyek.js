@@ -6,6 +6,7 @@ export function tablazatLetrehoz(lista) {
     <thead>
       <tr>
         <th>Név</th>
+        <th>Kép</th>
         <th>Típus</th>
         <th>Méret</th>
         <th>Szín</th>
@@ -17,12 +18,13 @@ export function tablazatLetrehoz(lista) {
   CIPOK.forEach((element, index) => {
     txt += `
             <tr>
-                <td>${element.nev}</td>
-                <td>${element.tipus}</td>
-                <td>${element.meret}</td>
-                <td>${element.szin}</td>
-                <td>${element.db}db</td>
-                <td><button>🗑️</button></td>
+                <td class="adminszoveg">${element.nev}</td>
+                <td><img class="adminkep" src="${element.kep}" alt="kep"></td>
+                <td class="adminszoveg">${element.tipus}</td>
+                <td class="adminszoveg">${element.meret}</td>
+                <td class="adminszoveg">${element.szin}</td>
+                <td class="adminszoveg">${element.db}db</td>
+                <td class="adminszoveg"><button id="${index}" class="torol">🗑️</button></td>
             </tr>
         `;
   });
@@ -40,7 +42,7 @@ export function kartyakLetrehoz(szurtCipok) {
 
   szurtCipok.forEach((cipo) => {
     kartyak += `
-        <div class="card text-white bg-dark mb-3" style="width: 18rem">
+        <div class="card text-white bg-dark mb-3" style="width: 20rem">
         <img src="${cipo.kep}" class="card-img-top" alt="${cipo.tipus}">
         <div class="card-body">
           <p class="ciponev">${cipo.nev}</p>
@@ -62,23 +64,22 @@ export function kartyakLetrehoz(szurtCipok) {
   return kartyak;
 }
 
-export function kartyakMegjelenit(szurtCipok) {
+export function kartyakMegjelenit(kartyak) {
   const kartyakContainer = $(".termekek");
-  const kartyak = kartyakLetrehoz(szurtCipok);
+  console.log(kartyakContainer)
   kartyakContainer.html(kartyak);
 }
 
 export function tipusValasztas() {
   let kivalasztottTipus = $("#rendezes").val();
-  let szurtCipok;
-  if (kivalasztottTipus === "osszes") {
+  let szurtCipok = [];
+  if (kivalasztottTipus === "Összes") {
     szurtCipok = CIPOK;
   } else {
     szurtCipok = CIPOK.filter((cipo) => cipo.tipus.includes(kivalasztottTipus));
   }
-  kartyakMegjelenit(szurtCipok);
+  let kartyak = kartyakLetrehoz(szurtCipok);
+  kartyakMegjelenit(kartyak);
 }
 
-export function kereses(keresesSzoveg){
-  return CIPOK.filter(cipo => cipo.nev.toLowerCase().includes(keresesSzoveg.toLowerCase()));
-}
+
