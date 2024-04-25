@@ -1,6 +1,6 @@
 import { CIPOK } from "./adatok.js";
 
-export function tablazatLetrehoz(lista) {
+export function tablazatLetrehoz() {
   let txt = `<div class="table-responsive">
     <table class="table table-dark table-striped">
     <thead>
@@ -33,7 +33,7 @@ export function tablazatLetrehoz(lista) {
 }
 
 export function tablaMegjelenit(txt) {
-  const ELEM = $(".tablazat");
+  const ELEM = $(".tablazat"); 
   ELEM.html(txt);
 }
 
@@ -73,7 +73,7 @@ export function kartyakMegjelenit(kartyak) {
 export function tipusValasztas() {
   let kivalasztottTipus = $("#rendezes").val();
   let szurtCipok = [];
-  if (kivalasztottTipus === "Összes") {
+  if (kivalasztottTipus === "osszes") {
     szurtCipok = CIPOK;
   } else {
     szurtCipok = CIPOK.filter((cipo) => cipo.tipus.includes(kivalasztottTipus));
