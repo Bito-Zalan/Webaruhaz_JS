@@ -1,11 +1,12 @@
 import { CIPOK } from "./adatok.js";
 import { tablazatLetrehoz, tablaMegjelenit, kartyakLetrehoz, kartyakMegjelenit} from "./fuggvenyek.js";
-import { tipusok, szures, torol, rendez } from "./esemenykezelo.js";
+import { tipusok, szures, torol, rendez, kosarErtesit } from "./esemenykezelo.js";
 
 console.log(CIPOK)
 let lista = CIPOK;
 let tablazat = tablazatLetrehoz(lista);
 tablaMegjelenit(tablazat);
+
 
 
 tipusok();
@@ -21,6 +22,7 @@ export function init(lista){
     kartyakMegjelenit(kartyak);
     rendezEsemeny();
     torolEsemeny();
+    kosarErtesit();
 }
 
 function szuresNevSzerint(){
