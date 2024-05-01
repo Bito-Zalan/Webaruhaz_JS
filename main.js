@@ -25,6 +25,10 @@ export function init(lista){
     kosarErtesit();
 }
 
+$(document).ready(function() {
+    kosarErtesit();
+});
+
 function szuresNevSzerint(){
     const szuroELEM = $("#szuro");
     szuroELEM.on("keyup", function(){

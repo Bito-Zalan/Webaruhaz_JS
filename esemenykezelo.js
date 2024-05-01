@@ -1,4 +1,5 @@
 import { tipusValasztas } from "./fuggvenyek.js";
+import { CIPOK } from "./adatok.js";
 
 export function tipusok(){
     $(document).ready(function(){
@@ -21,12 +22,12 @@ export function szures(lista, keresesSzoveg){
     return szurtLista;
 }
 
-export function kosarErtesit(){
-    $(document).ready(function(){
-        $("#kosargomb").click(function(){
+export function kosarErtesit() {
+    $(document).on("click", function() {
+            let cipo = CIPOK[index];
             alert("Termék hozzáadva a kosárhoz!");
-        })
-    })
+        
+    });
 }
 
 export function torol(lista, index){

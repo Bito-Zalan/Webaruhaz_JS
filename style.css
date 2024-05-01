@@ -24,6 +24,23 @@ img {
     margin: 20px;
 }
 
+.kosarbolvissza{
+    text-align: center;
+}
+
+.kosarbolvissza>a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid rgb(48, 48, 48);
+}
+.kosara:hover{
+    background-color: #212529;
+    color: white;
+}
+
+
+
 .termekek {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -49,6 +66,7 @@ table{
 
 .hozzaadas{
     margin-top: 20px;
+    
 }
 .hozzaadgomb{
     height: 40px;

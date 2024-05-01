@@ -44,7 +44,7 @@ export function tablaMegjelenit(txt) {
 export function kartyakLetrehoz(szurtCipok) {
   let kartyak = "";
 
-  szurtCipok.forEach((cipo) => {
+  szurtCipok.forEach((cipo, index) => {
     kartyak += `
         <div class="card text-white bg-dark mb-3" style="width: 20rem">
         <img src="${cipo.kep}" class="card-img-top" alt="${cipo.tipus}">
@@ -60,7 +60,7 @@ export function kartyakLetrehoz(szurtCipok) {
             Ár: ${cipo.ar} Ft<br />
             Készleten: ${cipo.db}db
           </p>
-          <button id="kosargomb" type="button" class="btn btn-success">Kosárba</button>
+          <button data-id="kosargomb${index}" type="button" class="btn btn-success">Kosárba</button>
         </div>
       </div>
     `;
@@ -85,5 +85,6 @@ export function tipusValasztas() {
   let kartyak = kartyakLetrehoz(szurtCipok);
   kartyakMegjelenit(kartyak);
 }
+
 
 
