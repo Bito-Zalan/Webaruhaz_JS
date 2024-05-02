@@ -38,4 +38,10 @@
 2. rendez(lista, kulcs, rIrany) szortirozom a listát. Visszatérési érték: rLista.
 3. szures(lista, keresesSzoveg) ha felengedem a billentyüzetet a leirt betükhöz keres név alapján. Visszatérési érték: szurtLista
 4. torol(lista, index) az admin oldalon lévő táblázatban a törlés gombra kattintva töröl egy elemet.
-5. kosarErtesit() gombnyomásra ad egy értesítést hogy az adott termék a kosárba lett helyezve.
+5. kosarErtesit() gombnyomásra ad egy értesítést hogy az adott termék a kosárba lett helyezve
+
+## kosárhoz kell
+1. KosarbaTesz()
+2. KosarbolTorol()
+3. OsszegSzamitas()
+## egy termék ne jelenjen meg többször , ha többet raknak kosárba dbszámot irjon.

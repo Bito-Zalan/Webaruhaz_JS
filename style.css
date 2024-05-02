@@ -1,6 +1,27 @@
 main {
-  width: 80%;
+  width: 90%;
   margin: auto;
+}
+
+.indexmain{
+    display: grid;
+    grid-template-areas: 'ih ih'
+                        'iar ias'
+                        'ifoot';
+    gap: 10px;
+}
+
+.indexheader{
+    grid-area: "ih";
+}
+.indexarticle{
+    grid-area: "iar";
+}
+.indexaside{
+    grid-area: "ias";
+}
+.indexfooter{
+    grid-area: "ifoot";
 }
 
 
@@ -43,8 +64,9 @@ img {
 
 .termekek {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
+  grid-template-columns: repeat(3, 25rem);
+  width: 70%;
+  float: left;
   margin: auto;
   margin-top: 50px;
 }
@@ -72,9 +94,23 @@ table{
     height: 40px;
 }
 
+.ment{
+    margin: 10px;
+}
+
 .nev{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+}
+
+.kosartartalom{
+    margin-top: 45px;
+    margin-left: 40px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer{
