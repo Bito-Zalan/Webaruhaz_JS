@@ -1,18 +1,20 @@
 import { CIPOK } from "./adatok.js";
 import { tablazatLetrehoz, tablaMegjelenit, kartyakLetrehoz, kartyakMegjelenit} from "./fuggvenyek.js";
-import { tipusok, szures, torol, rendez, kosarErtesit } from "./esemenykezelo.js";
+import { tipusok, szures, torol, rendez } from "./esemenykezelo.js";
+import { kosarbaRak, kosarTorles, kosarSzamol, kosarOsszeg, darabSzamFrissites } from "./kosar.js";
 
 console.log(CIPOK)
 let lista = CIPOK;
+let kosar = [];
 let tablazat = tablazatLetrehoz(lista);
 tablaMegjelenit(tablazat);
-
-
 
 tipusok();
 
 let rIrany = 1;
-init(CIPOK);
+let index = 0;
+let darab = 0;
+init(CIPOK, darab);
 szuresNevSzerint();
 
 export function init(lista){
@@ -22,13 +24,12 @@ export function init(lista){
     kartyakMegjelenit(kartyak);
     rendezEsemeny();
     torolEsemeny();
-    kosarErtesit();
+    kosarbaRak();
+    kosarTorles();
+    kosarSzamol();
+    kosarOsszeg();
+    darabSzamFrissites();
 }
-
-$(document).ready(function() {
-    kosarErtesit();
-});
-
 function szuresNevSzerint(){
     const szuroELEM = $("#szuro");
     szuroELEM.on("keyup", function(){
@@ -56,4 +57,7 @@ function torolEsemeny(){
     });
 }
 
+$(document).ready(function() {
+    kosarbaRak();
+});
 

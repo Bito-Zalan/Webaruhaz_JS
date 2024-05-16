@@ -3,71 +3,91 @@ main {
   margin: auto;
 }
 
-.indexmain{
-    display: grid;
-    grid-template-areas: 'ih ih'
-                        'iar ias'
-                        'ifoot';
-    gap: 10px;
-}
-
-.indexheader{
-    grid-area: "ih";
-}
-.indexarticle{
-    grid-area: "iar";
-}
-.indexaside{
-    grid-area: "ias";
-}
-.indexfooter{
-    grid-area: "ifoot";
-}
-
-
 img {
   width: 200px;
   height: 300px;
 }
 
-.adminkep{
-    width: 100px;
-    height: 100px;
-    box-shadow: 2px, 2px, gray;
+.indexmain {
+  display: grid;
+  grid-template-areas:
+    "h h h"
+    "ar ar as"
+    "f f f";
 }
 
-.adminszoveg{
-    font-size: 22px;
+.indexheader {
+  grid-area: h;
 }
 
-.kosaruzenet{
-    text-align: center;
-    margin: 20px;
+.indexarticle {
+  grid-area: ar;
+}
+aside {
+  grid-area: as;
+  border: 1px solid black;
+  width: 500px;
+  margin-top: 50px;
 }
 
-.kosarbolvissza{
-    text-align: center;
+.indexfooter {
+  grid-area: f;
+  text-align: center;
 }
 
-.kosarbolvissza>a{
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-    border: 1px solid rgb(48, 48, 48);
-}
-.kosara:hover{
-    background-color: #212529;
-    color: white;
+.kosargomb {
+  position: relative;
 }
 
+.cart-item img {
+  max-width: 100px;
+}
 
+.cart-item td {
+  padding: 10px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.adminkep {
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px, 2px, gray;
+}
+
+.adminszoveg {
+  font-size: 22px;
+}
+
+.kosaruzenet {
+  text-align: center;
+  margin: 20px;
+}
+
+.kosarbolvissza {
+  text-align: center;
+}
+
+.kosarbolvissza > a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border: 1px solid rgb(48, 48, 48);
+}
+.kosara:hover {
+  background-color: #212529;
+  color: white;
+}
 
 .termekek {
   display: grid;
-  grid-template-columns: repeat(3, 25rem);
-  width: 70%;
+  grid-template-columns: repeat(3, 22rem);
+  width: 100%;
   float: left;
   margin: auto;
+  margin-right: 5px;
   margin-top: 50px;
 }
 
@@ -82,102 +102,105 @@ img {
   grid-template-columns: repeat(3, 20rem);
 }
 
-table{
-    margin-top: 20px;
+table {
+  margin-top: 20px;
 }
 
-.hozzaadas{
-    margin-top: 20px;
-    
+.hozzaadas {
+  margin-top: 20px;
 }
-.hozzaadgomb{
-    height: 40px;
-}
-
-.ment{
-    margin: 10px;
+.hozzaadgomb {
+  height: 40px;
 }
 
-.nev{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+.ment {
+  margin: 10px;
 }
 
-.kosartartalom{
-    margin-top: 45px;
-    margin-left: 40px;
+.nev {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.row{
-    display: flex;
-    flex-wrap: wrap;
+.kosartartalom {
+  margin-top: 45px;
+  margin-left: 40px;
 }
 
-footer{
-    text-align: center;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.rendelesgomb{
-    margin-top: 20px;
+.rendelesgomb {
+  margin-top: 20px;
 }
 
-.ciponev{
-    text-decoration: underline;
-    text-decoration-color: rgba(240, 248, 255, 0.61) ;
+.ciponev {
+  text-decoration: underline;
+  text-decoration-color: rgba(240, 248, 255, 0.61);
 }
 
 @media (max-width: 576px) {
-    main{
-        width: 100%;
-        margin: auto;
-    }
-    .rendezes {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap; 
-    }  
-    .termekek{
-        justify-content: center;
-    }
+  main {
+    width: 100%;
+    margin: auto;
+  }
+  .rendezes {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .termekek {
+    justify-content: center;
+  }
 }
 @media (max-width: 775px) {
-    .rendezes {
-        display: grid;
-        grid-template-columns: repeat(2, 10rem);
-        gap: 10px;
-    }
-    .extra {
-        margin-top: 20px;
-        width: auto;
-        height: 40px;
-    }
+  .rendezes {
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+    gap: 10px;
+  }
+  .extra {
+    margin-top: 20px;
+    width: auto;
+    height: 40px;
+  }
 
-    .termekek {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        width: 100%;
-        margin: auto;
-        margin-top: 90px;
-    }
-    
+  .termekek {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 90px;
+  }
 }
 
 @media (max-width: 1130px) {
-    .termekek {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: auto;
-        margin-top: 90px;
-      }
+  .termekek {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 90px;
+  }
 }
 
 @media (max-width: 1400px) {
-    .termekek {
-        gap: 20px;
-        width: 100%;
-        margin: auto;
-        margin-top: 90px;
-      }
+  .termekek {
+    gap: 20px;
+    width: 100%;
+    margin: auto;
+    margin-top: 90px;
+  }
+
+  .indexmain {
+    display: grid;
+    grid-template-areas:
+      "h h h"
+      "ar ar ar"
+      "as as as"
+      "f f f";
+  }
 }

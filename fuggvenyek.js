@@ -1,5 +1,11 @@
 import { CIPOK } from "./adatok.js";
+import { kosarbaRak, kosarTorles, kosarSzamol } from "./kosar.js";
 
+
+kosarTorles();
+kosarSzamol();
+const index = 0;
+kosarbaRak(CIPOK[index]);
 export function tablazatLetrehoz(lista) {
   let txt = `<div class="table-responsive">
     <table class="table table-dark table-striped">
@@ -46,7 +52,7 @@ export function kartyakLetrehoz(szurtCipok) {
 
   szurtCipok.forEach((cipo, index) => {
     kartyak += `
-        <div class="card text-white bg-dark mb-3" style="width: 20rem">
+        <div class="card text-white bg-dark mb-3" style="width: 19rem">
         <img src="${cipo.kep}" class="card-img-top" alt="${cipo.tipus}">
         <div class="card-body">
           <p class="ciponev">${cipo.nev}</p>
@@ -60,7 +66,7 @@ export function kartyakLetrehoz(szurtCipok) {
             Ár: ${cipo.ar} Ft<br />
             Készleten: ${cipo.db}db
           </p>
-          <button data-id="kosargomb${index}" type="button" class="btn btn-success">Kosárba</button>
+          <button data-id="${index}" type="button" class="btn btn-success kosarbaRak">Kosárba</button>
         </div>
       </div>
     `;
@@ -73,6 +79,8 @@ export function kartyakMegjelenit(kartyak) {
   console.log(kartyakContainer)
   kartyakContainer.html(kartyak);
 }
+
+
 
 export function tipusValasztas() {
   let kivalasztottTipus = $("#rendezes").val();

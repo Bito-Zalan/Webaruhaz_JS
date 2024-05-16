@@ -1,6 +1,7 @@
 import { tipusValasztas } from "./fuggvenyek.js";
 import { CIPOK } from "./adatok.js";
 
+let kosar = [];
 export function tipusok(){
     $(document).ready(function(){
         $("#rendezes").change(tipusValasztas);
@@ -22,13 +23,7 @@ export function szures(lista, keresesSzoveg){
     return szurtLista;
 }
 
-export function kosarErtesit() {
-    $(document).on("click", function() {
-            let cipo = CIPOK[index];
-            alert("Termék hozzáadva a kosárhoz!");
-        
-    });
-}
+
 
 export function torol(lista, index){
     lista.splice(index, 1);
